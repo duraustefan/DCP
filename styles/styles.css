@@ -1,0 +1,176 @@
+/* Resetare stiluri implicite */
+html, body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth; 
+}
+
+/* Imagine fundal */
+#Building {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Header */
+header {
+    font-family: 'Roboto', sans-serif;
+    
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E5077; /* puțină transparență */
+    padding: 20px 10px 10px 10px;
+    border-bottom: 2px solid #0c1064;
+}
+
+#Contacts {
+    color: #F6F4F0;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    background: none;
+}
+
+#DoljConstruct {
+    font-family: 'Roboto', sans-serif;
+    color: #0c1064;
+    font-size: 1.5em;
+}
+
+#Proiectare {
+    
+    font-family: 'Roboto', sans-serif;
+    color: #26aade;
+    font-size: 1.5em;
+}
+
+.Textabout {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 8px #000;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #26aade;
+}
+
+/* Secțiuni */
+section {
+    position: relative;
+    z-index: 2;
+    background: #2e5077df;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.397);
+}
+section h2 {
+    color: #4DA1A9;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.servicii-lista {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.serviciu {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 200px;
+    color: #fff;
+    text-align: center;
+}
+.proiecte {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.proiect img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.proiect p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+.contact button {
+    background: #26aade;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact button:hover {
+    background: #0c1064;
+}
+footer {
+    text-align: center;
+    color: #fff;
+    background: rgba(44,44,44,0.7);
+    padding: 15px 0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+}
