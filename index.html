@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,73 +8,207 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="images/logohead.png">
 </head>
 <body>
-    <img id="Building" src="/images/Building.jpg" alt="Building Background">
+    <div id="bg-fader1"></div>
+    <div id="bg-fader2"></div>
+    <div id="Contacts">
+        <span><span class="contact-emoji">📍</span>Craiova, Vasile Conta nr.6</span>
+        <span><span class="contact-emoji">📞</span>+40 741 194 446</span>
+        <span><span class="contact-emoji">✉️</span>doljconstructproiectare@gmail.com</span>
+    </div>
     <header>
-        <nav class="navbar">
-            <a href="#despre">Despre</a>
-            <a href="#servicii">Servicii</a>
-            <a href="#portofoliu">Portofoliu</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div id="Contacts">
-            📍 Craiova, Vasile Conta nr.6 &nbsp; | &nbsp; 📞 +40 741 194 446 &nbsp; | &nbsp; ✉️ durauiancu@yahoo.com
-        </div>
-        <div class="header-row">
-            <div id="DoljConstruct">Dolj Construct</div>
-            <div id="Proiectare">Proiectare</div>
+        <div class="header-main">
+            <div class="header-left">
+                <img src="/images/logo.png" alt="Logo" class="logo">
+                <div class="header-title">
+                    <span id="DoljConstruct">DOLJ CONSTRUCT</span>
+                    <span id="Proiectare">PROIECTARE</span>
+                </div>
+            </div>
+            <nav class="navbar">
+                <a href="#despre">Despre</a>
+                <a href="#servicii">Servicii</a>
+                <a href="#contact-rapid">Contact</a>
+            </nav>
         </div>
     </header>
-    <section class="Textabout" id="despre">
-        <h1>Bine ai venit la Dolj Construct Proiectare</h1>
-        <p>Oferim servicii profesionale de proiectare și construcții civile și industriale.</p>
+    <section class="hero">
+        <h1>
+            Bine ai venit la<br>
+            <span class="highlight">Dolj Construct Proiectare</span>
+        </h1>
+        <p class="hero-subtitle">
+            Oferim servicii profesionale de proiectare a construcțiilor civile și industriale.
+        </p>
+        <div class="hero-buttons">
+            <a href="#servicii" class="btn btn-primary">Serviciile Noastre <span>&rarr;</span></a>
+            <a href="#contact-rapid" class="btn btn-outline">Contact</a>
+        </div>
     </section>
     <section class="servicii" id="servicii">
         <h2>Serviciile Noastre</h2>
+        <p class="servicii-subtitle">
+            Oferim servicii complete de proiectare și consultanță pentru toate nevoile dumneavoastră din domeniul construcțiilor civile și industriale.
+        </p>
         <div class="servicii-lista">
-            <div class="serviciu">
+            <div class="serviciu-card">
+                <div class="serviciu-icon" style="background:#eaf4ff;">
+                    <span style="font-size:2em;">🏢</span>
+                </div>
                 <h3>Proiectare</h3>
                 <p>Realizăm proiecte tehnice pentru construcții civile și industriale.</p>
+                <ul>
+                    <li>Proiecte de arhitectură</li>
+                    <li>Proiecte de rezistență</li>
+                    <li>Proiecte de instalații</li>
+                    <li>Avize și autorizații</li>
+                </ul>
             </div>
-            <div class="serviciu">
+            <div class="serviciu-card">
+                <div class="serviciu-icon" style="background:#eaf4ff;">
+                    <span style="font-size:2em;">👥</span>
+                </div>
                 <h3>Consultanță</h3>
                 <p>Oferim consultanță tehnică și soluții personalizate pentru fiecare client.</p>
-            </div>
-            <div class="serviciu">
-                <h3>Execuție</h3>
-                <p>Construim cu profesionalism și respectăm termenele stabilite.</p>
-            </div>
-        </div>
-    </section>
-    <section class="portofoliu" id="portofoliu">
-        <h2>Portofoliu</h2>
-        <div class="proiecte">
-            <div class="proiect">
-                <img src="images/Project1.jpg" alt="Proiect 1">
-                <p>Casuță, Dolj</p>
-            </div>
-            <div class="proiect">
-                <img src="images/Project2.jpg" alt="Proiect 2">
-                <p>Palat, Dolj</p>
-            </div>
-            <div class="proiect">
-                <img src="images/Project3.jpg" alt="Proiect 3">
-                <p>Castel, Craiova</p>
+                <ul>
+                    <li>Consultanță tehnică</li>
+                    <li>Expertiză tehnică</li>
+                    <li>Asistență tehnică</li>
+                    <li>Managementul proiectelor</li>
+                </ul>
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Nume" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mesajul tău" required></textarea>
-            <button type="submit">Trimite</button>
-        </form>
+
+    <section class="contact-info" id="contact-rapid">
+        <h2>Contact Rapid</h2>
+        <div class="contact-info-lista">
+            <div class="contact-info-card">
+                <div class="contact-info-icon" style="background:#eaf4ff;">
+                    <span style="font-size:2em;">📞</span>
+                </div>
+                <h3>Telefon</h3>
+                <a href="tel:+40741194446" class="contact-link">+40 741 194 446</a>
+            </div>
+            <div class="contact-info-card">
+                <div class="contact-info-icon" style="background:#eaf4ff;">
+                    <span style="font-size:2em;">✉️</span>
+                </div>
+                <h3>Email</h3>
+                <a href="mailto:durauiancu@yahoo.com" class="contact-link">doljconstructproiectare@gmail.com</a>
+            </div>
+            <div class="contact-info-card">
+                <div class="contact-info-icon" style="background:#eaf4ff;">
+                    <span style="font-size:2em;">📍</span>
+                </div>
+                <h3>Locație</h3>
+                <div class="contact-link">Craiova, Vasile Conta nr.6</div>
+            </div>
+        </div>
     </section>
-    <footer>
-        &copy; 2025 Dolj Construct Proiectare. Toate drepturile rezervate.
+
+    <footer class="site-footer">
+      <div class="site-footer-content">
+        <!-- Prima coloană: Descriere (mutată pe prima poziție) -->
+        <div class="site-footer-col">
+          <div class="site-footer-logo-row">
+            <img src="/images/logo.png" alt="Dolj Construct Logo" class="site-footer-logo" style="width:52px;height:52px;border: #131c2a 2px solid; border-radius:8px; padding:4px; object-fit:contain; background:none;">
+            <div>
+              <div class="site-footer-title">DOLJ CONSTRUCT</div>
+              <div class="site-footer-subtitle">PROIECTARE</div>
+            </div>
+          </div>
+          <div class="site-footer-desc">
+            Companie specializată în proiectare și consultanță pentru construcții civile și industriale.
+          </div>
+        </div>
+        <!-- A doua coloană: Informații -->
+        <div class="site-footer-col">
+          <div class="site-footer-section-title">Informații</div>
+          <div class="site-footer-contact-list">
+            <div class="site-footer-contact-item">
+              <span class="site-footer-contact-icon">⏰</span>
+              <div>
+                Luni - Vineri: 08:00 - 17:00<br>
+              </div>
+            </div>
+            <div class="site-footer-contact-item">
+              <span class="site-footer-contact-icon">📞</span>
+              <a href="tel:+40741194446" class="site-footer-contact-link">+40 741 194 446</a>
+            </div>
+            <div class="site-footer-contact-item">
+              <span class="site-footer-contact-icon">✉️</span>
+              <a href="mailto:durauiancu@yahoo.com" class="site-footer-contact-link">doljconstructproiectare@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <!-- A treia coloană: Locație (mutată pe ultima poziție) -->
+        <div class="site-footer-col">
+          <div class="site-footer-section-title">Locație</div>
+          <div class="site-footer-contact-list">
+            <div class="site-footer-contact-item">
+              <span class="site-footer-contact-icon">📍</span>
+              Craiova, Vasile Conta nr.6
+            </div>
+          </div>
+          <div style="margin-top:18px;">
+            <iframe
+              src="https://www.google.com/maps?q=Vasile+Conta+6,+Craiova,+Romania&output=embed"
+              width="100%" height="180" style="border:0; border-radius:8px;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Harta Vasile Conta nr 6, Craiova"></iframe>
+          </div>
+        </div>
+      </div>
+      <hr class="site-footer-hr" />
+      <div class="site-footer-copyright">
+        © 2024 Dolj Construct Proiectare. Toate drepturile rezervate.
+      </div>
     </footer>
+    <script>
+      // Sliding background image slider: old image slides left, new comes from right
+      const images = [
+        "/images/Building1.jpg",
+        "/images/Building2.jpg",
+        "/images/Building3.jpg"
+      ];
+      let idx = 0;
+      let showingFirst = true;
+      const fader1 = document.getElementById('bg-fader1');
+      const fader2 = document.getElementById('bg-fader2');
+      // Initial backgrounds
+      fader1.style.backgroundImage = `url('${images[0]}')`;
+      fader2.style.backgroundImage = `url('${images[1]}')`;
+      fader1.style.transform = "translate3d(0,0,0)";
+      fader2.style.transform = "translate3d(100vw,0,0)";
+      setInterval(() => {
+        const nextIdx = (idx + 1) % images.length;
+        if (showingFirst) {
+          // Prepare fader2 offscreen right
+          fader2.style.transition = "none";
+          fader2.style.transform = "translate3d(100vw,0,0)";
+          // Force reflow for transition to take effect
+          void fader2.offsetWidth;
+          // Set new image and animate both
+          fader2.style.backgroundImage = `url('${images[nextIdx]}')`;
+          fader2.style.transition = "transform 0.7s cubic-bezier(.77,0,.18,1)";
+          fader2.style.transform = "translate3d(0,0,0)";
+          fader1.style.transform = "translate3d(-100vw,0,0)";
+        } else {
+          // Prepare fader1 offscreen right
+          fader1.style.transition = "none";
+          fader1.style.transform = "translate3d(100vw,0,0)";
+          void fader1.offsetWidth;
+          fader1.style.backgroundImage = `url('${images[nextIdx]}')`;
+          fader1.style.transition = "transform 0.7s cubic-bezier(.77,0,.18,1)";
+          fader1.style.transform = "translate3d(0,0,0)";
+          fader2.style.transform = "translate3d(-100vw,0,0)";
+        }
+        idx = nextIdx;
+        showingFirst = !showingFirst;
+      }, 5000);
+    </script>
 </body>
 </html>
